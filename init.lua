@@ -285,14 +285,14 @@ require('lazy').setup({
   },
 
   {
-  'akinsho/toggleterm.nvim',
+    'akinsho/toggleterm.nvim',
     version = '*',
     opts = {
       close_on_exit = false,
       autochdir = true,
       direction = 'horizontal',
       shell = vim.o.shell,
-      size = 6,
+      size = 20,
       open_mapping = [[<C-t>]], -- custom keybinding
       start_in_insert = true,
       insert_mappings = true,
@@ -657,7 +657,7 @@ require('lazy').setup({
         } or {},
         virtual_text = {
           source = 'if_many',
-          spacing = 2,
+          spacing = 6,
           format = function(diagnostic)
             local diagnostic_message = {
               [vim.diagnostic.severity.ERROR] = diagnostic.message,
